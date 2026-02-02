@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CPU Scheduling Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>CPU Scheduling Simulator</h2>
+
+    <!-- Input Section -->
+    <div>
+        <input type="text" id="pid" placeholder="Process ID (P1)">
+        <input type="number" id="arrival" placeholder="Arrival Time">
+        <input type="number" id="burst" placeholder="Burst Time">
+        <button onclick="addProcess()">Add Process</button>
+    </div>
+
+    <!-- Controls -->
+    <div>
+        <select id="algorithm" onchange="toggleQuantum()">
+            <option value="FCFS">FCFS</option>
+            <option value="SJF">SJF (Non-Preemptive)</option>
+            <option value="RR">Round Robin</option>
+        </select>
+
+        <input type="number" id="quantum" placeholder="Time Quantum" style="display:none;">
+        <button onclick="simulate()">Simulate</button>
+        <button onclick="clearProcesses()" style="background:#dc2626;">
+            Clear Processes
+        </button>
+    </div>
+
+    <h3>Process Table</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>PID</th>
+                <th>Arrival</th>
+                <th>Burst</th>
+            </tr>
+        </thead>
+        <tbody id="processTable"></tbody>
+    </table>
+
+    <h3>Result</h3>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

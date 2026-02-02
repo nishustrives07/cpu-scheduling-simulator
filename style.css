@@ -1,0 +1,107 @@
+/* -------- Global -------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: #f8fafc; /* light tech background */
+    margin: 0;
+    padding: 24px;
+    color: #0f172a;
+}
+
+/* -------- Headings -------- */
+h2 {
+    text-align: center;
+    color: #0f172a;
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-top: 35px;
+    color: #020617;
+}
+
+/* -------- Input Section -------- */
+div {
+    margin-bottom: 18px;
+}
+
+input, select {
+    padding: 10px 12px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #2563eb;
+}
+
+/* -------- Buttons -------- */
+button {
+    padding: 10px 16px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+/* -------- Tables -------- */
+table {
+    width: 100%;
+    margin-top: 12px;
+    border-collapse: collapse;
+    background: white;
+    border: 2px solid #334155; /* strong outer border */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #475569; /* crisp inner borders */
+}
+
+th {
+    background: #0f172a; /* dark tech header */
+    color: #f8fafc;
+    font-weight: 600;
+}
+
+/* -------- Result Box -------- */
+#result {
+    margin-top: 20px;
+    padding: 18px;
+    background: #ffffff;
+    border: 2px solid #334155;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+}
+
+#result p {
+    margin-top: 12px;
+    font-weight: 500;
+    color: #020617;
+}
+
+/* -------- Responsive polish -------- */
+@media (max-width: 768px) {
+    table {
+        font-size: 13px;
+    }
+
+    input, select, button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
